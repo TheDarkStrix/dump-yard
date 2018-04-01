@@ -1,0 +1,8 @@
+. build/env*;
+export USE_CCACHE=1;
+export AOS_BUILD_TYPE=PLASMA;
+export KBUILD_BUILD_HOST=Unreal-Engine;
+export KBUILD_BUILD_USER=thedarkstrix;
+export ALLOW_MISSING_DEPENDENCIES=true;
+lunch aos_kenzo-userdebug;
+mka atomic;
